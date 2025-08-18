@@ -1,0 +1,11 @@
+
+CHIP Mux {
+    IN x, y;
+    OUT f;
+
+    PARTS:
+    //// Primera tabla de verdad de la Segunda Ley de Moore
+    Or(a= x, b= y, out= xory);
+    Not(in = xory, out= f);
+    
+}

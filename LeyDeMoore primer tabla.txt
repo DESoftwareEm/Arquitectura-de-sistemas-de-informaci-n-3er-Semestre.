@@ -1,0 +1,10 @@
+
+CHIP Mux {
+    IN x, y;
+    OUT f;
+
+    PARTS:
+    //// Primer tabla de verdad de la primera Ley de Moore
+    And(a=x, b=y, out=xy);
+    Not( in = xy, out = f);
+}
