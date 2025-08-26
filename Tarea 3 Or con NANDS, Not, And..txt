@@ -1,0 +1,11 @@
+//Tarea 3 Or con NANDS, Not, And.
+CHIP Not {
+    IN in, a, b;
+    OUT out;
+
+    PARTS:
+    Nand(a= a, b= in, out= nota);
+    Nand(a= b, b= in, out= notb);
+    Nand(a= nota, b= notb, out= out);
+
+}

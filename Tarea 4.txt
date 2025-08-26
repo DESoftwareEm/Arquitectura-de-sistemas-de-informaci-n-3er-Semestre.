@@ -1,0 +1,11 @@
+// Tarea 4 Mux
+CHIP Mux {
+    IN sel, a, b;
+    OUT out;
+
+    PARTS:
+    Not(in= sel, out= notsel);
+    And(a= notsel, b= a, out= nsa);
+    And(a= sel, b= b, out= selb);
+    Or(a= nsa, b= selb, out= out);
+}

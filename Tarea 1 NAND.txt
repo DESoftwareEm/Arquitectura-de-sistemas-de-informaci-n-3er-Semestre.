@@ -1,0 +1,11 @@
+
+//Tarea 1 NAND
+CHIP Not {
+    IN in, a;
+    OUT out;
+
+    PARTS:
+    Nand(a= a, b= in, out= out);
+  
+
+}

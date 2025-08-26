@@ -1,0 +1,12 @@
+//Tarea 5 Dmux
+CHIP DMux {
+    IN in, sel;
+    OUT out1, out2;
+
+    PARTS:
+    //out1
+    Not(in= sel, out= notsel);
+    And(a= notsel, b= in, out= out1);
+    //out2
+    And(a= sel, b= in, out= out2);
+}
